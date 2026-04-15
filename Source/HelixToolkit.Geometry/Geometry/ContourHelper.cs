@@ -1,4 +1,7 @@
 ﻿using HelixToolkit.Geometry;
+using HelixToolkit.Maths;
+using System;
+using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 

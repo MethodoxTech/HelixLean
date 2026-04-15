@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Diagnostics;
+﻿
 
 namespace HelixToolkit;
 
@@ -6,7 +6,8 @@ public static class ArrayExtensions
 {
     public static TResult[,] Convert<TSource, TResult>(this TSource[,] array, Func<TSource, TResult>? conversion = null)
     {
-        Guard.IsNotNull(array);
+        if (array == null)
+            throw new ArgumentNullException("array");
 
         if (conversion is null)
         {

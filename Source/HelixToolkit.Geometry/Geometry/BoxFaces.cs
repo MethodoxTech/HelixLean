@@ -1,4 +1,6 @@
-﻿namespace HelixToolkit.Geometry;
+﻿using System;
+
+namespace HelixToolkit.Geometry;
 
 /// <summary>
 /// Box face enumeration.
