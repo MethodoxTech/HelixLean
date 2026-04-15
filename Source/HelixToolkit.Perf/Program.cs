@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using HelixToolkit.Perf;
 using HelixToolkit.Perf.Maths;
+using System;
 using System.Runtime.Intrinsics.X86;
 
 

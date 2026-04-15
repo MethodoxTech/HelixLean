@@ -1,6 +1,13 @@
-﻿using CommunityToolkit.Diagnostics;
+﻿
+using CommunityToolkit.Diagnostics;
 using HelixToolkit.Geometry;
+using HelixToolkit.Maths;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Numerics;
+using System.Threading;
 
 namespace HelixToolkit.Geometry;
 
@@ -3878,7 +3885,7 @@ public sealed class MeshBuilder
     {
         Guard.IsNotNull(mesh);
 
-        this.Append(mesh.Positions, mesh.TriangleIndices, mesh.Normals, mesh.TextureCoordinates);
+        this.Append(mesh!.Positions, mesh.TriangleIndices, mesh.Normals, mesh.TextureCoordinates);
     }
 
     /// <summary>
@@ -3891,7 +3898,7 @@ public sealed class MeshBuilder
     {
         Guard.IsNotNull(mesh);
 
-        this.Append(mesh.Positions, mesh.TriangleIndices, this.Normals is not null ? mesh.Normals : null, this.TextureCoordinates is not null ? mesh.TextureCoordinates : null);
+        this.Append(mesh!.Positions, mesh.TriangleIndices, this.Normals is not null ? mesh.Normals : null, this.TextureCoordinates is not null ? mesh.TextureCoordinates : null);
     }
 
     /// <summary>
@@ -3909,8 +3916,7 @@ public sealed class MeshBuilder
     /// <param name="textureCoordinatesToAppend">
     /// The texture coordinates to append.
     /// </param>
-    public void Append(
-        IList<Vector3> positionsToAppend, IList<int> triangleIndicesToAppend,
+    public void Append(IList<Vector3> positionsToAppend, IList<int> triangleIndicesToAppend,
         IList<Vector3>? normalsToAppend = null, IList<Vector2>? textureCoordinatesToAppend = null)
     {
         Guard.IsNotNull(positionsToAppend);

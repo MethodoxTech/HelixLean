@@ -30,6 +30,8 @@ Copyright (c) 2007-2011 SlimDX Group
 The MIT License (MIT)
 */
 
+using System;
+
 namespace HelixToolkit.Maths
 {
     /// <summary>

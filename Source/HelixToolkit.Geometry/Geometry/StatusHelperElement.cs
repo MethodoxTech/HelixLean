@@ -1,4 +1,6 @@
-﻿namespace HelixToolkit.Geometry;
+﻿using System;
+
+namespace HelixToolkit.Geometry;
 
 /// <summary>
 /// Helper Class that is used in the calculation Process of the Diagonals.

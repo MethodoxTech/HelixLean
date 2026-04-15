@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Diagnostics;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Diagnostics;
 
 namespace HelixToolkit.Logger;

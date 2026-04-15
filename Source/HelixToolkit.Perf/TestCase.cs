@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Collections.Generic;
+
 namespace HelixToolkit.Perf;
 sealed class TestCase
 {

@@ -1,6 +1,10 @@
-﻿using CommunityToolkit.Diagnostics;
+﻿
+using CommunityToolkit.Diagnostics;
 using HelixToolkit.Geometry;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Numerics;
 
 namespace HelixToolkit.Geometry;
@@ -59,7 +63,7 @@ public sealed class MeshSimplification
             7 => M33,
             8 => M34,
             9 => M44,
-            _ => ThrowHelper.ThrowArgumentOutOfRangeException<float>(nameof(c)),
+            _ => throw new ArgumentOutOfRangeException(nameof(c)),
         };
 
         public float Det(int a11, int a12, int a13, int a21, int a22, int a23, int a31, int a32, int a33)

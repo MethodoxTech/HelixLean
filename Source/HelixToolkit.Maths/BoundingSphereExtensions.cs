@@ -1,4 +1,7 @@
-﻿namespace HelixToolkit.Maths
+﻿using System;
+using System.Collections.Generic;
+
+namespace HelixToolkit.Maths
 {
     public static class BoundingSphereExtensions
     {

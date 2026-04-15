@@ -1,4 +1,6 @@
-﻿namespace HelixToolkit.Maths
+﻿using System.Collections.Generic;
+
+namespace HelixToolkit.Maths
 {
     /// <summary>
     /// 
