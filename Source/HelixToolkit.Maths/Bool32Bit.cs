@@ -1,4 +1,6 @@
-﻿namespace HelixToolkit.Maths
+﻿using System;
+
+namespace HelixToolkit.Maths
 {
     /// <summary>
     /// Represents a bool value with size of 32 bits (4 bytes).

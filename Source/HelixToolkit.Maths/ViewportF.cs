@@ -29,13 +29,15 @@ The MIT License (MIT)
 Copyright (c) 2007-2011 SlimDX Group
 The MIT License (MIT)
 */
+using System;
+
 namespace HelixToolkit.Maths
 {
     /// <summary>
     /// Defines the viewport dimensions using float coordinates for (X,Y,Width,Height).
     /// </summary>
     [StructLayout(LayoutKind.Sequential, Pack = 4)]
-	public struct ViewportF : IEquatable<ViewportF>
+    public struct ViewportF : IEquatable<ViewportF>
 	{
 		/// <summary>
 		/// Position of the pixel coordinate of the upper-left corner of the viewport.

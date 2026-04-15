@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0</TargetFrameworks>
-    <LangVersion>12.0</LangVersion>
+    <TargetFrameworks>net10.0</TargetFrameworks>
+    
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Description>Helix Toolkit is a collection of 3D components for .NET.</Description>

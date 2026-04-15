@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+
 namespace HelixToolkit;
 
 public static class ArrayExtensions

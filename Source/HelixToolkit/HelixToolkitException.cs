@@ -1,4 +1,6 @@
-﻿namespace HelixToolkit;
+﻿using System;
+
+namespace HelixToolkit;
 
 /// <summary>
 /// Represents errors that occurs in the Helix 3D Toolkit.
